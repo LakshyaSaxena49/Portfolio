@@ -4,7 +4,6 @@ var typed = new Typed(".text", {
     "Full Stack Developer.",
     "UI/UX Designer.",
     "AI Enthusiast.",
-    "Guitarist.",
   ],
   typeSpeed: 70,
   backSpeed: 70,
@@ -47,7 +46,7 @@ This message was sent from your portfolio website.
 function sendEmailWithEmailJS(name, email, subject, message) {
 
   // Initialize EmailJS with your public key
-  emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+  emailjs.init("AkEOg8RPq_gIHYFxZ"); // Replace with your EmailJS public key
 
   const templateParams = {
     from_name: name,
@@ -57,7 +56,7 @@ function sendEmailWithEmailJS(name, email, subject, message) {
     to_email: "lakshyasaxena49@gmail.com",
   };
 
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams).then(
+  emailjs.send("service_ef95wx3", "template_nombuwh", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       alert("Message sent successfully! I'll get back to you soon.");
